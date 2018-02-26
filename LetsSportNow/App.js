@@ -7,13 +7,13 @@ import ProfilePage from "./app/components/Profile/ProfilePage";
 
 const styles = StyleSheet.create({
   map: {
-    position: "absolute",
+    padding: 50,
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    width: Dimensions.get("window").width / 5,
-    height: Dimensions.get("window").height / 5
+    width: 200,
+    height: 200
   },
   container: {
     flex: 1
@@ -76,6 +76,17 @@ export default class App extends Component {
 
           <View style={styles.slideDefault}>
             <Text style={styles.text}>Home page</Text>
+            <View style={{ flex: 1 }}>
+              <MapView
+                style={styles.map}
+                initialRegion={{
+                  latitude: 37.78825,
+                  longitude: -122.4324,
+                  latitudeDelta: 0.0922,
+                  longitudeDelta: 0.0421
+                }}
+              />
+            </View>
           </View>
 
           <View style={styles.slideDefault}>
@@ -83,17 +94,6 @@ export default class App extends Component {
           </View>
         </Swiper>
       </View>
-      // <View>
-      //   <MapView
-      //     style={styles.map}
-      //     initialRegion={{
-      //       latitude: 37.78825,
-      //       longitude: -122.4324,
-      //       latitudeDelta: 0.0922,
-      //       longitudeDelta: 0.0421
-      //     }}
-      //   />
-      // </View>
     );
   }
 }

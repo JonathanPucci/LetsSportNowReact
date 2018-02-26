@@ -69,18 +69,5 @@ export default class ProfilePage extends Component {
         </ImageBackground>
       </View>
     );
-    /*
-    <View style={{ flex: 0.1 }}>
-      <MapView
-        style={styles.map}
-        initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421
-        }}
-      />
-    </View>
-    */
   }
 }
