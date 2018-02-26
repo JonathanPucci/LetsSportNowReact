@@ -4,6 +4,7 @@ import { AppRegistry, StyleSheet, Text, View, Dimensions } from "react-native";
 import Swiper from "react-native-swiper";
 
 import ProfilePage from "./app/components/Profile/ProfilePage";
+import EventPage from "./app/components/Event/EventPage";
 
 const styles = StyleSheet.create({
   map: {
@@ -71,7 +72,7 @@ export default class App extends Component {
           scrollEnabled={this.state.outerScrollEnabled}
         >
           <View style={styles.slideDefault}>
-            <Text style={styles.text}>Event to put here Guigui</Text>
+            <EventPage />
           </View>
 
           <View style={styles.slideDefault}>
