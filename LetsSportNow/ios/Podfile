@@ -3,6 +3,8 @@ target 'LetsSportNow' do
   rn_path = '../node_modules/react-native'
   rn_maps_path = '../node_modules/react-native-maps'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
   pod 'React', path: rn_path, subspecs: [
     'Core',
